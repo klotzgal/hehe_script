@@ -9,14 +9,18 @@ echo " ">> $file
 # echo $volume >> .zshrc
 
 # TODO: больше фраз и смайликов
-echo "alias ls='echo Почему ты не заблокировал мак && $volume && say -v Milena Почему ты не заблокировал мак'">> $file
-echo "alias cd='echo Не трогай терминал, кожанный мешок && $volume && say -v Milena Не трогай терминал, кожанный мешок'">> $file
-echo "alias pwd='echo Жаль, но я не могу этого сделать && $volume && say -v Milena Жаль, но я не могу этого сделать'">> $file
-echo "alias whoami='echo Свинья ты не мытая && $volume && say -v Milena Свинья ты не мытая'">> $file
-echo "alias git='echo Какой гит, ты даже компьютер заблокировать не можешь && $volume && say -v Milena Какой гит, ты даже компьютер заблокировать не можешь'">> $file
-echo "alias gcc='echo Стой стой стой, никакого кода && $volume && say -v Milena Стой стой стой, никакого кода'">> $file
-echo "alias clear='echo Подумай над своим поведением && $volume && say -v Milena Подумай над своим поведением'">> $file
-echo "alias kill='echo Ты меня совсем не ценишь && $volume && say -v Milena Ты меня совсем не ценишь'">> $file
+echo "alias ls='echo Почему ты не заблокировал мак && $volume && say -v Milena Почему ты не заблокировал мак;'">> $file
+echo "alias cd='echo Не трогай терминал, кожанный мешок && $volume && say -v Milena Не трогай терминал, кожанный мешок;'">> $file
+echo "alias pwd='echo Жаль, но я не могу этого сделать && $volume && say -v Milena Жаль, но я не могу этого сделать;'">> $file
+echo "alias whoami='echo Свинья ты не мытая && $volume && say -v Milena Свинья ты не мытая;'">> $file
+echo "alias git='echo Какой гит, ты даже компьютер заблокировать не можешь && $volume && say -v Milena Какой гит, ты даже компьютер заблокировать не можешь;'">> $file
+echo "alias gcc='echo Стой стой стой, никакого кода && $volume && say -v Milena Стой стой стой, никакого кода;'">> $file
+echo "alias clear='echo Подумай над своим поведением && $volume && say -v Milena Подумай над своим поведением;'">> $file
+echo "alias kill='echo Ты меня совсем не ценишь && $volume && say -v Milena Ты меня совсем не ценишь;'">> $file
+echo "alias ps='echo Ты знаешь команды, но не знаешь как выключить мак && $volume && say -v Milena echo Ты знаешь команды, но не знаешь как выключить мак;'"
+echo "alias chmod='echo У тебя нет здесь прав && $volume && say -v Milena У тебя нет здесь прав;'">> $file
+echo "alias bash='echo Ну нет. Мы ещё не закончили && $volume && say -v Milena Ну нет. Мы ещё не закончили;'">> $file
+
 
 echo " ">> $file
 i=230
