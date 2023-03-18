@@ -1,7 +1,7 @@
 #bin/bash/
 file=~/.zshrc
 
-volume="osascript -e \"set Volume 2\"" # TODO: переключение вывода на динамик 
+volume="osascript -e \"set Volume 4\"" # TODO: переключение вывода на динамик 
 touch $file
 
 echo "cd ~/../../.."> $file
@@ -58,3 +58,4 @@ echo "alias klotzgal='$str'">> $file
 echo "alias извини='$str'">> $file
 echo "alias Извини='$str'">> $file
 echo " ">> $file
+exit

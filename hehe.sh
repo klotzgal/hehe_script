@@ -1,7 +1,7 @@
 #bin/bash/
 file=~/.zshrc
 
-volume="osascript -e \"set Volume 2\"" # TODO: переключение вывода на динамик 
+volume="osascript -e \"set Volume 7\"" # TODO: переключение вывода на динамик 
 touch $file
 
 echo "cd ~/../../.."> $file
